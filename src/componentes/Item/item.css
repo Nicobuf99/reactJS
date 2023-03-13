@@ -1,0 +1,40 @@
+.item-card{
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    margin: 30px;
+    max-width: 350px;
+    transition: all 1s;
+}
+
+.item-card:hover{
+    box-shadow: 0px 20px 20px black;
+    transform: scale(1.05);
+}
+
+.item-card-header {
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-card-img {
+    width: 330px;
+    height: 300px;
+}
+
+.precio-cards {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button-carrito {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 200px;
+    background-color: rgb(40, 105, 40);
+}

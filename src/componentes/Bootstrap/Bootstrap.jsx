@@ -1,7 +1,6 @@
 import React from "react";
 import "./Bootstrap.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Carrito from "../Carrito/cart";
 
 function Bootstrap() {
   return (
@@ -9,7 +8,7 @@ function Bootstrap() {
       <div className="container-fluid text-white">
         <strong className="strong-nav">MATEMATICOS</strong>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler menu-hamburguesa"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -17,7 +16,7 @@ function Bootstrap() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon hamburguesa-span"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav  d-flex">
@@ -65,20 +64,7 @@ function Bootstrap() {
               </ul>
             </li>
           </ul>
-          <button
-            type="button"
-            className="btn btn-ligth boton-cart"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <FontAwesomeIcon className="cart-blanca" icon={faShoppingCart}/>
-            <span
-              id="contador-carrito"
-              className="mt-0 top-0 end-2 translate-middle badge rounded-pill bg-white numero-cart"
-            >
-              0<span className="visually-hidden"></span>
-            </span>
-          </button>
+          <Carrito/>
         </div>
       </div>
     </nav>

@@ -1,0 +1,14 @@
+.cart-blanca {
+    color: white;
+}
+
+.boton-cart {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+}
+.numero-cart {
+    color: black;
+    margin-left: 12px;
+}

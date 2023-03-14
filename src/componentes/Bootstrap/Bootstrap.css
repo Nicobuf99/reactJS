@@ -3,17 +3,11 @@
     margin-right: 20px;
 }
 
-.cart-blanca {
+.menu-hamburguesa {
     color: white;
+    border: 2px solid white;
 }
 
-.boton-cart {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    justify-items: end;
-}
-.numero-cart {
-    color: black;
-    margin-left: 12px;
+.hamburguesa-span {
+    color: white;
 }

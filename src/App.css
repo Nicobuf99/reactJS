@@ -1,5 +1,8 @@
 body {
   background-image: url(https://w7.pngwing.com/pngs/644/590/png-transparent-texture-mapping-paper-huawei-mate-8-android-wood-texture-texture-3d-computer-graphics-brown.png);
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .App-header {
   display: flex;
@@ -7,5 +10,3 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-

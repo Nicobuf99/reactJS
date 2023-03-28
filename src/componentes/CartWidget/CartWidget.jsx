@@ -1,10 +1,11 @@
-import "./cart.css"
+import "./CartWidget.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Carrito() {
     return(
-        <button
+        <Link to="/cart"
             type="button"
             className="btn btn-ligth boton-cart"
             data-bs-toggle="modal"
@@ -17,7 +18,7 @@ function Carrito() {
             >
               0<span className="visually-hidden"></span>
             </span>
-          </button>
+        </Link>
     )
 }
 

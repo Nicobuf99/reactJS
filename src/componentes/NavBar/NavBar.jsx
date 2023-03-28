@@ -1,12 +1,13 @@
 import React from "react";
-import "./Bootstrap.css";
-import Carrito from "../Carrito/cart";
+import "./NavBar.css";
+import Carrito from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
-function Bootstrap() {
+function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid text-white">
-        <strong className="strong-nav">MATEMATICOS</strong>
+        <Link className="strong-nav" to="/">MATEMATICOS</Link>
         <button
           className="navbar-toggler menu-hamburguesa"
           type="button"
@@ -21,45 +22,45 @@ function Bootstrap() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav  d-flex">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/category/Termo">
                 TERMOS
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/category/Matero">
                 MATEROS
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/category/Bombilla">
                 BOMBILLAS
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <Link
                 className="nav-link dropdown-toggle text-white"
-                href="#"
+                to="/mates"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 MATES
-              </a>
+              </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/category/MateCalabaza">
                     CALABAZAS
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/category/MateMadera">
                     DE MADERA
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/category/MateVidrio">
                     DE VIDRIO
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -71,4 +72,4 @@ function Bootstrap() {
   );
 }
 
-export default Bootstrap;
+export default NavBar;

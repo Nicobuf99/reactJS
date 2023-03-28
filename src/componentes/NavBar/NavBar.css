@@ -1,6 +1,13 @@
 .strong-nav {
     font-style: italic;
     margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.strong-nav:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .menu-hamburguesa {

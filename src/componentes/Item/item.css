@@ -13,10 +13,12 @@
 }
 
 .item-card-header {
+    color: white;
     text-align: center;
     font-size: large;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(117, 53, 53);
 }
 
 .item-card-img {
@@ -30,11 +32,8 @@
     text-align: center;
 }
 
-.button-carrito {
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 200px;
-    background-color: rgb(40, 105, 40);
+
+.detalle {
+    margin: 10px;
+    margin-left: 37.5%;
 }

@@ -1,18 +1,16 @@
-import "./item.css";
+import "./Item.css";
+import { Link } from "react-router-dom";
 
 function Item(props) {
-  function addToCart() {
-    alert("Producto agregado al carrito!");
-  }
 
   return (
-    <div className="item-card">
+    <div className={`item-card ${props.category}`} id={props.id}>
       <h3 className="item-card-header">{props.title}</h3>
       <img src={props.imagen} className="item-card-img" alt="imagen"></img>
       <h4 className="precio-cards">${props.price}</h4>
-      <button onClick={addToCart} className="button-carrito">
-        Agregar al carrito
-      </button>
+      <Link to={`/item/${props.id}`}>
+        <button className="detalle">Ver detalle</button>
+      </Link>
     </div>
   );
 }

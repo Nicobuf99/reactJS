@@ -6,7 +6,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 function getSingleItem(idURL){
-    const promesa = new Promise((resolve, reject) => {
+    const promesa = new Promise((resolve) => {
         setTimeout(()=>{
             const filtroProducto = productsDatabase.find(item => {
                 return (item.id === Number(idURL) )

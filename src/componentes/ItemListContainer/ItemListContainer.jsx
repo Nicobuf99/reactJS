@@ -26,19 +26,19 @@ function getItemsByCategory(categoryURL) {
 
 function ItemListContainer() {
     const [products, setProducts] = useState([])
+    const { categoryid } = useParams()
 
-    const {categoryid} = useParams()
-
-    useEffect(()=>{
-        if (!categoryid){
-            getItems().then((respuesta) => {
-            setProducts(respuesta)})
+    useEffect(() => {
+        if (!categoryid) {
+          getItems().then((respuesta) => {
+            setProducts(respuesta);
+          });
+        } else {
+          getItemsByCategory(categoryid).then((respuesta) => {
+            setProducts(respuesta);
+          });
         }
-        else {
-            getItemsByCategory(categoryid).then((respuesta) => {
-            setProducts(respuesta)})
-        }
-    }, [products])
+      }, [categoryid]);
 
     return (
         <div>

@@ -8,7 +8,7 @@ function ItemDetail({product}) {
     console.log(cart)
 
 
-    function addToCart(count,) {
+    function addToCart(count) {
         addItem(product, count);
       }
 

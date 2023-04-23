@@ -41,4 +41,7 @@
 .detalle {
     margin: 10px;
     margin-left: 37.5%;
+    color: white;
+    background-color: #864a23;
+    border: 2px solid black;
 }

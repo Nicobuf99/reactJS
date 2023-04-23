@@ -10,18 +10,14 @@ Este proyecto, diseñado y completado con la libreria react JS, permite de forma
 -Librerias utilizadas durante el proyecto para la NavBar (Bootstrap) y para la espera de la carga de productos (UIball loaders)
 -Utilizacion de firebase para almacenamiento de datos de los productos mas los pedidos de compra de los clientes
 
-## Deploy de la página
 
-Para poder ver este archivo esta tanto la posibilidad de ver el deploy realizado es Vercel, que se encuentra en este link:
-
-
-Otra forma de poder verla es a traves de estos 3 pasos:
+## Para poder ver el deploy de la pagina hay que hacer estos tres pasos:
 
 ### 1- Para clonar el repositorio:
 
 $ git clone https://github.com/Nicobuf99/reactJS.git
 
-### 2- Para nstalar dependecias:
+### 2- Para instalar dependecias:
 
 $ npm install
 

@@ -12,7 +12,7 @@ Este proyecto, diseñado y completado con la libreria react JS, permite de forma
 
 ## Deploy de la página
 
-Para poder ver este archivo esta tanto la posibilidad de ver el deploy realizado es Versel, que se encuentra en este link:
+Para poder ver este archivo esta tanto la posibilidad de ver el deploy realizado es Vercel, que se encuentra en este link:
 
 
 Otra forma de poder verla es a traves de estos 3 pasos:

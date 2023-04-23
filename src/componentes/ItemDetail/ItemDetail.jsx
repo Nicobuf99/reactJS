@@ -1,11 +1,15 @@
-import React from "react";
+import { React, useContext } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { cartContext } from "../../context/cartContext";
 
 function ItemDetail({product}) {
 
+    const {cart, addItem} = useContext(cartContext)
+    console.log(cart)
 
-    function addToCart() {
-        alert("Producto agregado al carrito!");
+
+    function addToCart(count,) {
+        addItem(product, count);
       }
 
     return (
@@ -19,10 +23,7 @@ function ItemDetail({product}) {
                 <p>{product.informacion}</p>
                 <p>Precio: ${product.price}</p>
                 <div className="d-flex justify-content-evenly">
-                    <ItemCount/>
-                    <button onClick={addToCart} className="button-carrito">
-                        Agregar al carrito
-                    </button>
+                <ItemCount stock={product.stock} addToCart={addToCart} />
                 </div>
             </div>
         </div>

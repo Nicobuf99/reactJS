@@ -18,7 +18,7 @@
     font-size: large;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(117, 53, 53);
+    background-color: #864a23;
 }
 
 .item-card-img {
@@ -32,6 +32,11 @@
     text-align: center;
 }
 
+
+.h5-unidades {
+    text-align: center;
+    font-size: medium;
+}
 
 .detalle {
     margin: 10px;

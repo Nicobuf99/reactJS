@@ -4,6 +4,8 @@ import Carrito from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+
+  
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid text-white">
@@ -19,8 +21,8 @@ function NavBar() {
         >
           <span className="navbar-toggler-icon hamburguesa-span"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav  d-flex">
+        <div className="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul className="navbar-nav flex-grow-1">
             <li className="nav-item">
               <Link className="nav-link text-white" to="/category/Termo">
                 TERMOS
@@ -64,8 +66,10 @@ function NavBar() {
                 </li>
               </ul>
             </li>
+            <li className=" nav-item flex-grow-1 cart-nav-li">
+                <Link to="/cart" className="nav-link cart-navbar"><Carrito/></Link>
+            </li>
           </ul>
-          <Carrito/>
         </div>
       </div>
     </nav>

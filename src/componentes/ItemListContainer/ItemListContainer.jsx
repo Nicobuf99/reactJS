@@ -1,28 +1,11 @@
 import React, {useState, useEffect} from "react";
 import Flex from "../Flex/flex";
 import ItemList from "../ItemList/ItemList";
-import productsDatabase from "../../data/productsDatabase";
 import "./ItemListContainer.css"
 import { useParams } from "react-router-dom";
+import Loader from "../Loader/Loader";
+import { getItems, getItemsByCategory } from "../../services/firestore";
 
-function getItems() {
-    const promesa = new Promise((resolve) => {
-        setTimeout(()=>{
-            resolve(productsDatabase)
-        }, 500)
-    })
-    return promesa
-}
-
-function getItemsByCategory(categoryURL) {
-    const promesa = new Promise((resolve) => {
-        setTimeout(()=>{
-          const filtroNav =  productsDatabase.filter(item => item.category === categoryURL)
-          resolve(filtroNav)
-        }, 500)
-    })
-    return promesa
-}
 
 function ItemListContainer() {
     const [products, setProducts] = useState([])
@@ -39,6 +22,10 @@ function ItemListContainer() {
           });
         }
       }, [categoryid]);
+
+      if(products.length === 0){
+        return <Loader/>
+      }
 
     return (
         <div>

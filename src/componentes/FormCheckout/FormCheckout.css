@@ -1,0 +1,30 @@
+.h1-form {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.form-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-form {
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.input-form {
+    margin: 10px;
+}
+
+.button-checkout {
+    margin: 10px;
+    background-color: #864a23;
+    color: white;
+    border: 2px solid white;
+}

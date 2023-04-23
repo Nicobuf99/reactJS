@@ -7,10 +7,11 @@ function Item(props) {
     <div className={`item-card ${props.category}`} id={props.id}>
       <h3 className="item-card-header">{props.title}</h3>
       <img src={props.imagen} className="item-card-img" alt="imagen"></img>
-      <h4 className="precio-cards">${props.price}</h4>
+      <h5 className="precio-cards">${props.price}</h5>
       <Link to={`/item/${props.id}`}>
         <button className="detalle">Ver detalle</button>
       </Link>
+      {props.stock < 100 && <h5 className="h5-unidades">QUEDAN POCAS UNIDADES!</h5>}
     </div>
   );
 }

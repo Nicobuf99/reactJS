@@ -1,14 +1,15 @@
 .cart-blanca {
     color: white;
+    margin-top: 5px;
 }
 
 .boton-cart {
     width: 100%;
     display: flex;
-    justify-content: end;
-    justify-items: end;
+    justify-content: flex-end;
 }
 .numero-cart {
     color: black;
     margin-left: 12px;
 }
+

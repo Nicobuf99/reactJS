@@ -4,12 +4,12 @@ import Carrito from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-
-  
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid text-white">
-        <Link className="strong-nav" to="/">MATEMATICOS</Link>
+        <Link className="strong-nav" to="/">
+          MATEMATICOS
+        </Link>
         <button
           className="navbar-toggler menu-hamburguesa"
           type="button"
@@ -67,7 +67,9 @@ function NavBar() {
               </ul>
             </li>
             <li className=" nav-item flex-grow-1 cart-nav-li">
-                <Link to="/cart" className="nav-link cart-navbar"><Carrito/></Link>
+              <Link to="/cart" className="nav-link cart-navbar">
+                <Carrito />
+              </Link>
             </li>
           </ul>
         </div>

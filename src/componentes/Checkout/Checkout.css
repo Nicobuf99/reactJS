@@ -1,22 +1,24 @@
 .div-checkout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-.h1-checkout, .p-checkout, .boton-checkout {
-    margin: 30px;
+.h1-checkout,
+.p-checkout,
+.boton-checkout {
+  margin: 30px;
 }
 
 .p-checkout {
-    font-size: larger;
-    font-weight: 500;
+  font-size: larger;
+  font-weight: 500;
 }
 
 .boton-checkout {
-    background-color: #864a23;
-    color: white;
-    border: 2px solid white;
-    padding: 3px;
+  background-color: #864a23;
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
 }

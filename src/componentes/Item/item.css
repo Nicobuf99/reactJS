@@ -1,47 +1,46 @@
-.item-card{
-    background-color: white;
-    color: black;
-    border: 5px solid black;
-    margin: 30px;
-    max-width: 350px;
-    transition: all 1s;
+.item-card {
+  background-color: white;
+  color: black;
+  border: 5px solid black;
+  margin: 30px;
+  max-width: 350px;
+  transition: all 1s;
 }
 
-.item-card:hover{
-    box-shadow: 0px 20px 20px black;
-    transform: scale(1.05);
+.item-card:hover {
+  box-shadow: 0px 20px 20px black;
+  transform: scale(1.05);
 }
 
 .item-card-header {
-    color: white;
-    text-align: center;
-    font-size: large;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #864a23;
+  color: white;
+  text-align: center;
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #864a23;
 }
 
 .item-card-img {
-    width: 330px;
-    height: 300px;
+  width: 330px;
+  height: 300px;
 }
 
 .precio-cards {
-    margin-left: 10px;
-    margin-top: 10px;
-    text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
-
 .h5-unidades {
-    text-align: center;
-    font-size: medium;
+  text-align: center;
+  font-size: medium;
 }
 
 .detalle {
-    margin: 10px;
-    margin-left: 37.5%;
-    color: white;
-    background-color: #864a23;
-    border: 2px solid black;
+  margin: 10px;
+  margin-left: 37.5%;
+  color: white;
+  background-color: #864a23;
+  border: 2px solid black;
 }

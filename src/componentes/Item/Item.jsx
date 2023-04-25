@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Item.css";
 
 function Item(props) {
-
   return (
     <div className={`item-card ${props.category}`} id={props.id}>
       <h3 className="item-card-header">{props.title}</h3>
@@ -12,7 +11,9 @@ function Item(props) {
       <Link to={`/item/${props.id}`}>
         <button className="detalle">Ver detalle</button>
       </Link>
-      {props.stock < 100 && <h5 className="h5-unidades">QUEDAN POCAS UNIDADES!</h5>}
+      {props.stock < 100 && (
+        <h5 className="h5-unidades">QUEDAN POCAS UNIDADES!</h5>
+      )}
     </div>
   );
 }

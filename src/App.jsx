@@ -7,25 +7,27 @@ import { CartProvider } from "./context/cartContext";
 import CartContainer from "./componentes/CartContainer/CartContainer";
 import Checkout from "./componentes/Checkout/Checkout";
 
-
-
 function App() {
-
   return (
     <>
-    <CartProvider>
-    <BrowserRouter>
-      <header className="App-header"><NavBar/></header>
-      <Routes>
-        <Route path="/" element={<ItemListContainer/>}/>
-        <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-        <Route path="/category/:categoryid" element={<ItemListContainer/>} />
-        <Route path="/cart" element={<CartContainer/>} />
-        <Route path="/checkout/:orderID" element={<Checkout/>} />
-        <Route path="*" element={<h1>PAGE NOT FOUND</h1>}/>
-      </Routes>
-    </BrowserRouter>
-    </CartProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <header className="App-header">
+            <NavBar />
+          </header>
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route
+              path="/category/:categoryid"
+              element={<ItemListContainer />}
+            />
+            <Route path="/cart" element={<CartContainer />} />
+            <Route path="/checkout/:orderID" element={<Checkout />} />
+            <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
+          </Routes>
+        </BrowserRouter>
+      </CartProvider>
     </>
   );
 }

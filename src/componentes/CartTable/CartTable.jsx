@@ -1,5 +1,5 @@
-import React from 'react';
-import "./CartTable.css"
+import React from "react";
+import "./CartTable.css";
 
 function CartTable({ cart, getPriceInCart, removeItem }) {
   return (
@@ -26,13 +26,20 @@ function CartTable({ cart, getPriceInCart, removeItem }) {
             <td>{item.price}</td>
             <td>{item.count}</td>
             <td>
-              <button className="delete-button" onClick={() => removeItem(item.id)}>X</button>
+              <button
+                className="delete-button"
+                onClick={() => removeItem(item.id)}
+              >
+                X
+              </button>
             </td>
             <td>${item.price * item.count}</td>
           </tr>
         ))}
         <tr>
-          <td colSpan="6" className='td-totalprice'>EL TOTAL A PAGAR POR TUS PRODUCTOS ES DE $ {getPriceInCart()}</td>
+          <td colSpan="6" className="td-totalprice">
+            EL TOTAL A PAGAR POR TUS PRODUCTOS ES DE $ {getPriceInCart()}
+          </td>
         </tr>
       </tbody>
     </table>

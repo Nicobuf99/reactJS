@@ -25,4 +25,8 @@ $ npm install
 
 $ npm start
 
+### 4- Para ver el deployment, link a continuacion:
+
+https://react-jsbufczyk.vercel.app/
+
 
